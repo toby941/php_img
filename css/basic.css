@@ -1,0 +1,90 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+body{
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	background-color: #eee;
+	color: #444;
+	font-size: 75%;
+}
+a{
+	color: #27D;
+	text-decoration: none;
+}
+a:focus, a:hover, a:active {
+	text-decoration: underline;
+}
+p, li {
+	line-height: 1.8em;
+}
+h1, h2 {
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	margin: 0 0 10px 0;
+	letter-spacing:-1px;
+}
+h1 {
+	padding: 0;
+	font-size: 3em;
+	color: #333;
+}
+h2 {
+	padding-top: 10px;
+	font-size:2em;
+}
+pre {
+	font-size: 1.2em;
+	line-height: 1.2em;
+	overflow-x: auto;
+}
+div#page {
+	width: 900px;
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: left;
+	border-color: #ddd;
+	border-style: none solid solid;
+	border-width: medium 1px 1px;
+}
+div#container {
+	padding: 20px;
+}
+div#ads {
+	clear: both;
+	padding: 12px 0 12px 66px;
+}
+div#footer {
+	clear: both;
+	color: #777;
+	margin: 0 auto;
+	padding: 20px 0 40px;
+	text-align: center;
+}
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+
+
+.nav-wrap { margin: 50px auto;  background-color: rgba(0,0,0,0.6); border-top: 2px solid white; border-bottom: 2px solid white; }
+
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+#example-one { margin: 0 auto; list-style: none; position: relative; width: 960px; }
+#example-one li { display: inline; }
+#example-one li a { color: #bbb; font-size: 14px; display: block; float: left; padding: 6px 10px 4px 10px; text-decoration: none; text-transform: uppercase; }
+#example-one li a:hover { color: white; }
+#magic-line { position: absolute; bottom: -2px; left: 0; width: 100px; height: 2px; background: #fe4902; }
+
+#example-two { margin: 0 auto; list-style: none; position: relative; width: 960px; }
+#example-two li { display: inline; }
+#example-two li a { position: relative; z-index: 200; color: #bbb; font-size: 14px; display: block; float: left; padding: 6px 10px 4px 10px; text-decoration: none; text-transform: uppercase; }
+#example-two li a:hover { color: white; }
+#example-two #magic-line-two { position: absolute; top: 0; left: 0; width: 100px; background: rgba(220, 133, 5, 0.9); z-index: 100; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+
+.current_page_item a, .now a { color: white !important; }
