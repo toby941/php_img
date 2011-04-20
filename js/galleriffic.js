@@ -92,7 +92,6 @@ jQuery(document).ready(function($){
                 backgroundColor: $magicLine.data("origColor")
             });
         });
-        alert("ss");
         // Initialize Advanced Galleriffic Gallery
     var gallery = $('#thumbs').galleriffic({
         delay: 2500,
