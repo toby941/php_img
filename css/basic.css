@@ -39,7 +39,7 @@ pre {
 	overflow-x: auto;
 }
 div#page {
-	width: 900px;
+	width: 1024px;
 	background-color: #fff;
 	margin: 0 auto;
 	text-align: left;
@@ -88,3 +88,15 @@ div#footer {
 #example-two #magic-line-two { position: absolute; top: 0; left: 0; width: 100px; background: rgba(220, 133, 5, 0.9); z-index: 100; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
 
 .current_page_item a, .now a { color: white !important; }
+#htb {margin-left:20px;font-size:16}
+.imgcenter{
+		height:400px;
+		width:400px;
+		display:table-cell;
+		vertical-align:middle;
+		text-align:center;
+		*display: block;
+		*font-size: 350px;
+		*font-family:Arial;
+		border:1px solid #CCCCCC;
+	}

@@ -75,7 +75,12 @@ jQuery(document).ready(function($){
         var $el, leftPos, newWidth, $mainNav = $("#example-two");
         $mainNav.append("<li id='magic-line-two'></li>");
         var $magicLine = $("#magic-line-two");
-        $magicLine.width($(".now").width()).height($mainNav.height()).css("left", $(".now a").position().left).data("origLeft", $(".now a").position().left).data("origWidth", $magicLine.width()).data("origColor", $(".now a").attr("rel"));
+        $magicLine.width($(".now").width())
+		.height($mainNav.height()).css("left", $(".now a")
+		.position().left)
+		.data("origLeft", $(".now a")
+		.position().left).data("origWidth", $magicLine.width())
+		.data("origColor", $(".now a").attr("rel"));
         $("#example-two li").find("a").hover(function(){
             $el = $(this);
             leftPos = $el.position().left;
@@ -106,12 +111,12 @@ jQuery(document).ready(function($){
         loadingContainerSel: '#loading',
         renderSSControls: true,
         renderNavControls: true,
-        playLinkText: 'Play Slideshow',
-        pauseLinkText: 'Pause Slideshow',
-        prevLinkText: '&lsaquo; Previous Photo',
-        nextLinkText: 'Next Photo &rsaquo;',
-        nextPageLinkText: 'Next &rsaquo;',
-        prevPageLinkText: '&lsaquo; Prev',
+        playLinkText: '幻灯片播放',
+        pauseLinkText: '停止幻灯播放',
+        prevLinkText: '&lsaquo; 上一张',
+        nextLinkText: '下一张 &rsaquo;',
+        nextPageLinkText: '下一页 &rsaquo;',
+        prevPageLinkText: '&lsaquo; 上一页',
         enableHistory: true,
         autoStart: false,
         syncTransitions: true,

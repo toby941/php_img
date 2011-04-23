@@ -76,12 +76,12 @@
 		loadingContainerSel:       '',
 		renderSSControls:          true,
 		renderNavControls:         true,
-		playLinkText:              'Play',
-		pauseLinkText:             'Pause',
-		prevLinkText:              'Previous',
-		nextLinkText:              'Next',
-		nextPageLinkText:          'Next &rsaquo;',
-		prevPageLinkText:          '&lsaquo; Prev',
+		playLinkText:              '播放',
+		pauseLinkText:             '暂停',
+		prevLinkText:              '上一张',
+		nextLinkText:              '下一张',
+		nextPageLinkText:          '下一张 &rsaquo;',
+		prevPageLinkText:          '&lsaquo; 上一张',
 		enableHistory:             false,
 		enableKeyboardNavigation:  true,
 		autoStart:                 false,
@@ -583,7 +583,7 @@
 					if (this.onTransitionOut) {
 						this.onTransitionOut(previousSlide, previousCaption, isSync, transitionOutCallback);
 					} else {
-						previousSlide.fadeTo(this.getDefaultTransitionDuration(isSync), 0.0, transitionOutCallback);
+						previousSlide.fadeTo(this.(isSync), 0.0, transitionOutCallback);
 						if (previousCaption)
 							previousCaption.fadeTo(this.getDefaultTransitionDuration(isSync), 0.0);
 					}
@@ -917,8 +917,9 @@
 					});
 			}
 		}
-
-		var initFirstImage = !this.enableHistory || !location.hash;
+	//weather init first image ,default is:
+	//	var initFirstImage = !this.enableHistory || !location.hash;
+	  var initFirstImage=true;
 		if (this.enableHistory && location.hash) {
 			var hash = $.galleriffic.normalizeHash(location.hash);
 			var imageData = allImages[hash];
