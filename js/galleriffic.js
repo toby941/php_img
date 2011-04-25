@@ -1,4 +1,7 @@
 jQuery(document).ready(function($){
+	if($.browser.msie){
+		$('#browser_change').show();
+	}
     // We only want these styles applied when javascript is enabled
     $('div.navigation').css({
         'width': '300px',

@@ -30,5 +30,5 @@
             <li id="nav_how_to_bay"><a rel="rgba(123,91,230,0.9)" href="/how_to_buy.php">如何购买</a></li>
             <li id="nav_about_us"><a rel="rgba(255,255,255,0.4)" href="/about_us.php">关于我们</a></li>
         </ul>
-
     </div>
+    <div id="browser_change" style="display:none">为了获取更好的浏览体验，建议您更换当前使用浏览器。推荐使用google推出的全球最快浏览器 <a target="_blank" href="http://www.google.com/chrome">chrome</a></div>
