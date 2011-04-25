@@ -15,22 +15,6 @@ require("include.php");
 						<a href="#toggleCaption" class="off" title="Show Caption">详细介绍</a>
 					</div>
 				</div>
- <?php
- function getHiddenFolder($path){
- 	$handle = opendir($path);
- 		while (($file = readdir($handle)) !== false) {
- 			if ($file != "." && $file != ".."){
- 				if (is_dir($path . "/" . $file)) {
- 					getHiddenFolder($path . "/" . $file);
- 				}
- 				if($file == "des.json"){
- 					echo '<input type="hidden" name="json" value="'.$path."/".'" />';
- 				}
- 			}
- 			
- 		}
- }
-?>
 				<div id="thumbs" class="navigation">
 					<ul class="thumbs noscript" id="_imgul" >
 					</ul>
@@ -82,4 +66,18 @@ $(document).ready(function(){
 </script>
 <?php
 require("footer.php");
+ function getHiddenFolder($path){
+ 	$handle = opendir($path);
+ 		while (($file = readdir($handle)) !== false) {
+ 			if ($file != "." && $file != ".."){
+ 				if (is_dir($path . "/" . $file)) {
+ 					getHiddenFolder($path . "/" . $file);
+ 				}
+ 				if($file == "des.json"){
+ 					echo '<input type="hidden" name="json" value="'.$path."/".'" />';
+ 				}
+ 			}
+ 			
+ 		}
+ }
 ?>

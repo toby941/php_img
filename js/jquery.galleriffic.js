@@ -583,9 +583,10 @@
 					if (this.onTransitionOut) {
 						this.onTransitionOut(previousSlide, previousCaption, isSync, transitionOutCallback);
 					} else {
-						previousSlide.fadeTo(this.(isSync), 0.0, transitionOutCallback);
-						if (previousCaption)
+					 previousSlide.fadeTo(this.getDefaultTransitionDuration(isSync), 0.0, transitionOutCallback);
+						if (previousCaption){
 							previousCaption.fadeTo(this.getDefaultTransitionDuration(isSync), 0.0);
+						}
 					}
 				}
 

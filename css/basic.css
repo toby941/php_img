@@ -70,7 +70,7 @@ div#footer {
 * { margin: 0; padding: 0; }
 
 
-.nav-wrap { margin: 50px auto;  background-color: rgba(0,0,0,0.6); border-top: 2px solid white; border-bottom: 2px solid white; }
+.nav-wrap { margin: 50px auto;background-color:black; background-color: rgba(0,0,0,0.6); border-top: 2px solid white; border-bottom: 2px solid white; }
 
 .group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 *:first-child+html .group { zoom: 1; } /* IE7 */

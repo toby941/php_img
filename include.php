@@ -4,7 +4,7 @@
 		<title>Galleriffic | Insert an image into the gallery after initialization</title>
 		<link rel="stylesheet" href="css/basic.css" type="text/css" />
 		<link rel="stylesheet" href="css/galleriffic-4.css" type="text/css" />
-		<script type="text/javascript" src="js/jquery.min.js"></script>
+	 <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.min.js"></script>
 		<script type="text/javascript" src="js/jquery.history.js"></script>
 		<script type='text/javascript' src='js/jquery.color-RGBa-patch.js'></script>
 		<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
@@ -20,7 +20,6 @@
 			<div id="container">
 				<h1><a href="">JackJones杰克琼斯</a></h1>
 			 <div class="nav-wrap">
-
         <ul class="group" id="example-two">
             <li id="nav_home" class="now"><a rel="#fe4902" href="/">首页</a></li>
             <li id="nav_session_hot"><a rel="rgba(50,69,12,0.9)" href="/">当季主打</a></li>
@@ -33,11 +32,3 @@
         </ul>
 
     </div>
-<?php
-/*
- * Created on 2011-4-23
- *
- * To change the template for this generated file go to
- * Window - Preferences - PHPeclipse - PHP - Code Templates
- */
-?>
