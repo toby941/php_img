@@ -29,7 +29,7 @@ require("include.php");
 				</a>
 				<div class="caption">
 					<div class="download">
-					<a name="download" href="" target="_blank">Download Original</a>
+					<a name="download" href="/" target="_blank">Download Original</a>
 					</div>
 					<div class="image-title"></div>
 					<div class="image-desc"></div>
@@ -42,6 +42,7 @@ require("include.php");
 <?PHP
 getHiddenFolder('images/man');
 ?>
+</script>
 <?php
 require("footer.php");
  function getHiddenFolder($path){
@@ -59,4 +60,4 @@ require("footer.php");
  		}
  }
 ?>
-<input type="hidden" id="currentPageId" value="nav_home"/>
+<input type="hidden" id="currentPageId" value="nav_man"/>

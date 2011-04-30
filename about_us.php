@@ -7,3 +7,4 @@ require("include.php");
 <?php
 require("footer.php");
 ?>
+<input type="hidden" id="currentPageId" value="nav_about_us"/>

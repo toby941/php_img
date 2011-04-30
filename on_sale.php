@@ -17,4 +17,4 @@ QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=120857336&site=qq&
 <?php
 require("footer.php");
 ?>
-<input type="hidden" id="currentPageId" value="nav_how_to_bay"/>
+<input type="hidden" id="currentPageId" value="nav_on_sale"/>

@@ -42,6 +42,29 @@ require("include.php");
 <?PHP
 getHiddenFolder('images/man');
 ?>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('input[name="json"]').each(function(){
+		var jsonPath=$(this).val();
+			$.getJSON(jsonPath+"des.json",function(data){
+			var hiddenli=$('#hidden_li');
+			for(var i=0;i<data.length;i++){
+				var coloneli=hiddenli.clone();
+				coloneli.find('a[name=leaf]').attr('href',jsonPath+'n/'+data[i].name);
+				coloneli.find('img[name=s]').attr('src',jsonPath+'s/'+data[i].name);
+				coloneli.find('a[name=download]').attr('href',jsonPath+data[i].name);
+				coloneli.find('.image-title').html(data[i].title);
+				coloneli.find('.image-desc').html(data[i].des);
+				$('#_imgul').append(coloneli);
+			}
+		});
+	});
+			$('#_imgul').show();
+			setTimeout(function(){$.getScript('./js/galleriffic.js')},500);
+
+
+});
+</script>
 <?php
 require("footer.php");
  function getHiddenFolder($path){
@@ -59,4 +82,4 @@ require("footer.php");
  		}
  }
 ?>
-<input type="hidden" id="currentPageId" value="nav_home"/>
+<input type="hidden" id="currentPageId" value="nav_session_hot"/>

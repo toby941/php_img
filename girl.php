@@ -20,7 +20,6 @@ require("include.php");
 					</ul>
 				</div>
 				<div style="clear: both;"></div>
-			
 	
 		<div id="hidden_div" style="display:none;">
 			<li id="hidden_li">
@@ -40,7 +39,7 @@ require("include.php");
 	</div>
 </div>
 <?PHP
-getHiddenFolder('images/man');
+getHiddenFolder('images/girl');
 ?>
 <?php
 require("footer.php");
@@ -59,4 +58,4 @@ require("footer.php");
  		}
  }
 ?>
-<input type="hidden" id="currentPageId" value="nav_home"/>
+<input type="hidden" id="currentPageId" value="nav_girl"/>
