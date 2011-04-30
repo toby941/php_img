@@ -55,6 +55,8 @@ function loadImage(){
 	$('#_imgul').show();
 	setTimeout(function(){$.getScript('./js/galleriffic.js')},500);
 	}else{
+		if($('#gallery').size()>0){
 		addNo();
+		}
 	}
 }
