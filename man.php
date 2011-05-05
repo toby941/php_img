@@ -40,7 +40,13 @@ require("include.php");
 	</div>
 </div>
 <?PHP
-getHiddenFolder('images/man');
+$types = array("coat","shirt","trousers");
+ $type=$_GET["type"];
+ if(in_array($type,$types)){
+ 	getHiddenFolder('images/man/'.$type);
+ }else{
+	getHiddenFolder('images/man');
+ }
 ?>
 </script>
 <?php

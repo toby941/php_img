@@ -1,43 +1,45 @@
-html, body {
-	margin:0;
-	padding:0;
-}
-body{
+body {
 	text-align: center;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
 	background-color: #eee;
 	color: #444;
-	font-size: 75%;
+	font: 15px ;
 }
-a{
+
+a {
 	color: #27D;
 	text-decoration: none;
 }
-a:focus, a:hover, a:active {
+
+a:focus,a:hover,a:active {
 	text-decoration: underline;
 }
-p, li {
-	line-height: 1.8em;
+
+p,li {
 }
-h1, h2 {
+
+h1,h2 {
 	font-family: "Trebuchet MS", Verdana, sans-serif;
 	margin: 0 0 10px 0;
-	letter-spacing:-1px;
+	letter-spacing: -1px;
 }
+
 h1 {
 	padding: 0;
 	font-size: 3em;
 	color: #333;
 }
+
 h2 {
 	padding-top: 10px;
-	font-size:2em;
+	font-size: 2em;
 }
+
 pre {
 	font-size: 1.2em;
 	line-height: 1.2em;
 	overflow-x: auto;
 }
+
 div#page {
 	width: 1024px;
 	background-color: #fff;
@@ -47,13 +49,16 @@ div#page {
 	border-style: none solid solid;
 	border-width: medium 1px 1px;
 }
+
 div#container {
 	padding: 20px;
 }
+
 div#ads {
 	clear: both;
 	padding: 12px 0 12px 66px;
 }
+
 div#footer {
 	clear: both;
 	color: #777;
@@ -61,39 +66,192 @@ div#footer {
 	padding: 20px 0 40px;
 	text-align: center;
 }
+
 /*
 	 CSS-Tricks Example
 	 by Chris Coyier
 	 http://css-tricks.com
 */
+* {
+	margin: 0;
+	padding: 0;
+}
 
-* { margin: 0; padding: 0; }
+.nav-wrap {
+	margin: 50px auto;
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+.group:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+*:first-child+html .group {
+	zoom: 1;
+}  /* IE7 */
+#nav {
+	margin: 0 auto;
+	list-style: none;
+	position: relative;
+	width: 960px;
+}
+
+#nav li {
+	display: inline;
+}
+
+#nav li a {
+	position: relative;
+	z-index: 200;
+	color: #bbb;
+	font-size: 14px;
+	display: block;
+	float: left;
+	padding: 6px 10px 4px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#nav li a:hover {
+	color: white;
+}
+
+#nav #magic-line-two {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	background: rgba(220, 133, 5, 0.9);
+	z-index: 100;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.current_page_item a,.now a {
+	color: white !important;
+}
+
+#htb {
+	margin-left: 20px;
+	font-size: 16
+}
+
+.imgcenter {
+	height: 400px;
+	width: 400px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center; *
+	display: block; *
+	font-size: 350px; *
+	font-family: Arial;
+	border: 1px solid #CCCCCC;
+}
+
+#browser_change {
+	color: red
+}
+
+#no {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 175%;
+}
+
+#subnav {
+	margin: 0 auto;
+	list-style: none;
+	position: relative;
+}
+
+#subnav li {
+	display: inline;
+}
+
+#subnav li a {
+	position: relative;
+	z-index: 200;
+	color: #bbb;
+	font-size: 14px;
+	display: block;
+	float: left;
+	padding: 6px 10px 4px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#subnav li a:hover {
+	color: white;
+}
 
 
-.nav-wrap { margin: 50px auto;background-color:black; background-color: rgba(0,0,0,0.6); border-top: 2px solid white; border-bottom: 2px solid white; }
+.container {width: 960px; margin: 0 auto;}
+ul#topnav {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 970px;
+	list-style: none;
+	position: relative;
+	/*--Set relative positioning on the unordered list itself - not on the list item--*/
+	font-size: 1.2em;
+	background: url(topnav_stretch.gif) repeat-x;
+	margin-bottom : 30px;
+}
 
-.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
-*:first-child+html .group { zoom: 1; } /* IE7 */
+ul#topnav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #555;
+	/*--Divider for each parent level links--*/
+}
 
+ul#topnav li a {
+	padding: 0px 15px;
+	display: block;
+	color: #f0f0f0;
+	text-decoration: none;
+}
 
-#nav { margin: 0 auto; list-style: none; position: relative; width: 960px; }
-#nav li { display: inline; }
-#nav li a { position: relative; z-index: 200; color: #bbb; font-size: 14px; display: block; float: left; padding: 6px 10px 4px 10px; text-decoration: none; text-transform: uppercase; }
-#nav li a:hover { color: white; }
-#nav #magic-line-two { position: absolute; top: 0; left: 0; width: 100px; background: rgba(220, 133, 5, 0.9); z-index: 100; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+ul#topnav li:hover {
+	background: #1376c9 url(topnav_active.gif) repeat-x;
+}
 
-.current_page_item a, .now a { color: white !important; }
-#htb {margin-left:20px;font-size:16}
-.imgcenter{
-		height:400px;
-		width:400px;
-		display:table-cell;
-		vertical-align:middle;
-		text-align:center;
-		*display: block;
-		*font-size: 350px;
-		*font-family:Arial;
-		border:1px solid #CCCCCC;
-	}
-#browser_change{color: red}
-#no {margin: 0 auto;text-align: center;font-size: 175%;}
+ul#topnav li span {
+	float: left;
+	position: absolute;
+	left: 0;
+	display: none; /*--Hide by default--*/
+	width: 970px;
+	background: #1376c9;
+	color: #fff;
+	/*--Bottom right rounded corner--*/
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	/*--Bottom left rounded corner--*/
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+ul#topnav li:hover span {
+	display: block;
+}  /*--Show subnav on hover--*/
+ul#topnav li span a {
+	display: inline;
+}
+
+/*--Since we declared a link style on the parent list link, we will correct it back to its original state--*/
+ul#topnav li span a:hover {
+	text-decoration: underline;
+}
