@@ -1,20 +1,61 @@
 <?php
 require("include.php");
 ?>
-<div>
-<h2>购买流程：</h2>
-<ol id="htb">
-<li>随意挑选<strong><font size="30" color="red">折扣给力</font>的<a href="/">品牌衣服</strong></a>  </li>
-<li>线上交流:<br/>
-gtalk：<iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlq5249bqkme0cfc5sie9s171sh759rchu3m5c4lob1gj7tpv35s58a4jj98hi8pkdtktt9pq9tir9r9j0qap8h8rth125l0vfc1mak5kp0fded89eqnq6m6fl153gensn2a2t9tv56607a0thauhrprpr2vjb4658a&amp;w=300&amp;h=18" allowtransparency="true" frameborder="0" height="18" width="300"></iframe><br/>
-QQ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=120857336&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:120857336:50" alt="购买洽谈" title="购买洽谈"></a><br/>
-旺旺：<a target="_blank" href="http://amos1.taobao.com/msg.ww?v=2&uid=toby941&s=1" ><img border="0" src="http://amos1.taobao.com/online.ww?v=2&uid=toby941&s=1" alt="购买洽谈" /></a>
-</li>
-<li>南京同城交易/支付宝交易</li>
-</ol>
-</div>
+		<h2>2011 JackJones杰克琼斯 给力男装 优惠特卖</h2>
+				<!-- Start Advanced Gallery Html Containers -->
+				<div id="gallery" class="content">
+					<div id="controls" class="controls"></div>
+					<div class="slideshow-container">
 
+						<div id="loading" class="loader"></div>
+						<div id="slideshow" class="slideshow"></div>
+						<div id="caption" class="caption-container"></div>
+					</div>
+					<div id="captionToggle">
+						<a href="#toggleCaption" class="off" title="Show Caption">详细介绍</a>
+					</div>
+				</div>
+				<div id="thumbs" class="navigation">
+					<ul class="thumbs noscript" id="_imgul" >
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+	
+		<div id="hidden_div" style="display:none;">
+			<li id="hidden_li">
+				<a title="Title #0"  name="leaf" class="thumb">
+				<img alt="Title #0" src="" name="s"/>
+				</a>
+				<div class="caption">
+					<div class="download">
+					<a name="download" href="" target="_blank">Download Original</a>
+					</div>
+					<div class="image-title"></div>
+					<div class="image-desc"></div>
+				</div>
+			</li>
+		</div>
+		<!-- -->
+	</div>
+</div>
+<?PHP
+getHiddenFolder('images/onsale');
+?>
 <?php
 require("footer.php");
+ function getHiddenFolder($path){
+ 	$handle = opendir($path);
+ 		while (($file = readdir($handle)) !== false) {
+ 			if ($file != "." && $file != ".."){
+ 				if (is_dir($path . "/" . $file)) {
+ 					getHiddenFolder($path . "/" . $file);
+ 				}
+ 				if($file == "des.json"){
+ 					echo '<input type="hidden" name="json" value="'.$path."/".'" />';
+ 				}
+ 			}
+ 			
+ 		}
+ }
 ?>
 <input type="hidden" id="currentPageId" value="nav_on_sale"/>
