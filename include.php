@@ -41,6 +41,7 @@
     <li><a  href="/on_sale.php">限时特卖</a></li>
     <li><a href="/how_to_buy.php">如何购买</a></li>
     <li><a href="/about_us.php">关于衣柜</a></li>
+    <li><a href="https://www.google.com/reader/view/feed/http://yigui.toby941.com/RSS.xml">订阅衣柜最新上架</a></li>
 </ul>
 </div>
     <div id="browser_change" style="display:none">为了获取更好的浏览体验，建议您更换当前使用浏览器。推荐使用google推出的全球最快浏览器 <a target="_blank" href="http://www.google.com/chrome">chrome</a></div>
