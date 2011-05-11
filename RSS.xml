@@ -6,7 +6,7 @@
 
 	<channel>
 		<title>衣柜最新上架</title>
-		<atom:link href="http://yigui.toby941.com/RSS.php" rel="self"
+		<atom:link href="http://yigui.toby941.com/RSS.xml" rel="self"
 			type="application/rss+xml" />
 		<link>http://yigui.toby941.com/</link>
 		<description>衣柜最新上架</description>
