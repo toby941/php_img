@@ -2,7 +2,7 @@ body {
 	text-align: center;
 	background-color: #eee;
 	color: #444;
-	font: 15px ;
+	font: 15px;
 }
 
 a {
@@ -15,6 +15,7 @@ a:focus,a:hover,a:active {
 }
 
 p,li {
+	
 }
 
 h1,h2 {
@@ -192,8 +193,11 @@ div#footer {
 	color: white;
 }
 
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
 
-.container {width: 960px; margin: 0 auto;}
 ul#topnav {
 	margin: 0;
 	padding: 0;
@@ -204,7 +208,7 @@ ul#topnav {
 	/*--Set relative positioning on the unordered list itself - not on the list item--*/
 	font-size: 1.2em;
 	background: url(topnav_stretch.gif) repeat-x;
-	margin-bottom : 30px;
+	margin-bottom: 30px;
 }
 
 ul#topnav li {
@@ -254,4 +258,155 @@ ul#topnav li span a {
 /*--Since we declared a link style on the parent list link, we will correct it back to its original state--*/
 ul#topnav li span a:hover {
 	text-decoration: underline;
+}
+
+/*comment css*/
+.commentlist {
+	line-height: 130%;
+	margin: 10px 0;
+	padding-left: 30px;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ul,ol {
+	margin: 0.5em 0 1.5em 1.5em;
+	padding-left: 20px;
+}
+
+.commentlist li.comment {
+	border: 1px solid #CCCCCC;
+}
+
+.comment-author img.avatar {
+	margin-top: -5px;
+}
+
+img.avatar {
+	float: right;
+	margin: 5px;
+}
+
+img {
+	border: medium none;
+}
+
+.comment-author-link {
+	padding: 0 0 5px;
+}
+
+.commentlist cite {
+	color: #227AD1;
+}
+
+.commentlist cite {
+	font-size: 110%;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.commentlist cite a,.commentlist cite a:visited {
+	color: #227AD1;
+}
+
+.suf-widget,.post,div.page,.non-wp-post,#subnav,.hier-nav,.page-nav,.post-nav,.flattened,.author-profile,.tag-info,.category-info,#featured-posts,h3#comments,h3.comments,h3#respond,h3.respond,#reply-title,textarea,.author-info,blockquote,pre,input[type="text"],input[type="password"],.commentlist li,.suf-mag-categories td,.suf-mag-excerpts td,.suf-tiles td,h2.suf-mag-headlines-title,.suf-mag-excerpts th,.suf-tiles th,.suf-mag-categories th,#recaptcha_response_field,#language-selector ul li,#language-selector ul li a,#language-selector ul li a:visited,.download,.announcement,.warning,.note,.suf-mag-headlines,.nr-post h3,.nr_widget h4,.post form#whats-new-form #whats-new-textarea,.post form#whats-new-form,ul.item-list li,.standard-form,fieldset
+	{
+	border-radius: 5px 5px 5px 5px;
+}
+
+.commentlist li {
+	background-color: #FBFBFB;
+	margin-bottom: 5px;
+	padding: 5px 10px;
+}
+
+.commentlist {
+	line-height: 130%;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+h3#respond,h3.respond,#reply-title {
+	background-image: url("images/icons/comment_edit.png");
+	background-position: 7px center;
+	background-repeat: no-repeat;
+	clear: both;
+	font-size: 116%;
+	margin: 20px 0 0;
+	padding: 7px 7px 7px 35px;
+}
+
+h3 {
+	font-size: 166%;
+}
+
+h3,h4,h5,h6 {
+	font-weight: bold;
+}
+
+#commentform {
+	margin-top: 10px;
+}
+
+p,.p {
+	margin-bottom: 1.5em;
+}
+
+#commentform label.fancy {
+	background: url("img/menu-dark.jpg") repeat-x scroll left top #0052A4;
+	color: #FFFFFF;
+}
+
+#commentform label {
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+#commentform label {
+	border: 1px solid #999999;
+	color: #000000;
+	display: inline;
+	float: left;
+	font-size: 100%;
+	font-weight: bold;
+	height: 20px;
+	margin: 0;
+	padding: 5px;
+	text-align: right;
+	width: 80px;
+}
+
+#commentform input[type="text"],#commentform textarea {
+	border-top-left-radius: 0;
+}
+
+#commentform input[type="text"],#commentform label.textarea {
+	border-bottom-left-radius: 0;
+}
+
+#commentform input[type="text"] {
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#commentform input[type="text"] {
+	height: 20px;
+	margin: 0;
+}
+input {
+    border-color: #CCCCCC #AAAAAA #AAAAAA #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    line-height: 1.5em;
+    padding: 5px 3px 3px 5px;
+}
+
+img.new-icon {
+	top: 0;
+    position: absolute;
+    z-index: 1;
 }

@@ -1,5 +1,5 @@
 <?php
-//error_reporting(E_ALL^E_NOTICE^E_WARNING);
+error_reporting(E_ALL^E_NOTICE^E_WARNING);
 ?>
 <html>
 	<head>
@@ -40,6 +40,7 @@
     <li><a  href="/girl.php">女装</a></li>
     <li><a  href="/on_sale.php">限时特卖</a></li>
     <li><a href="/how_to_buy.php">如何购买</a></li>
+    <li> <img alt="New" class="new-icon pngfix" src="/img/new.png"><a href="/comment.php">随便说说</a></li>
     <li><a href="/about_us.php">关于衣柜</a></li>
     <li><a href="https://www.google.com/reader/view/feed/http://yigui.toby941.com/RSS.xml">订阅衣柜最新上架</a></li>
 </ul>

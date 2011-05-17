@@ -1,0 +1,12 @@
+.commentlist {
+    line-height: 130%;
+    margin: 10px 0;
+    padding-left: 30px;
+}
+ol {
+    list-style-type: decimal;
+}
+ul, ol {
+    margin: 0.5em 0 1.5em 1.5em;
+    padding-left: 20px;
+}
