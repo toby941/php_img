@@ -1,11 +1,13 @@
 <?php
 error_reporting(E_ALL^E_NOTICE^E_WARNING);
+define("ALLOW","YES");
+require ("function.php");
 ?>
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 		<title>衣柜/爱消费，爱购物，也爱实惠</title>
-		 <meta name="keywords" content="时尚服装，优惠，打折，品牌服装，男装，女装，杰克琼斯，艾格，vero moda"/>  
+		 <meta name="keywords" content="yigui,衣柜,时尚服装,优惠服装,打折服装,品牌服装,男装,女装,杰克琼斯衬衫,艾格,vero moda"/>  
 		 <meta name="description" content="衣柜小站致力于提供四季穿着解决方案，所售服装全部正品实货"/> 
 		<link rel="stylesheet" href="/css/basic.css" type="text/css" />
 		<link rel="stylesheet" href="/css/galleriffic-4.css" type="text/css" />

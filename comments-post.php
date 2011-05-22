@@ -1,4 +1,6 @@
 <?php
+define("ALLOW","YES");
+require ("function.php");
 function check_email_address($emailcheck) {
 	//首先，我们检查这里的@符号，然后看其长度是否正确。
 	if (!ereg("^[^@]{1,64}@[^@]{1,255}$", $emailcheck)) {
@@ -30,15 +32,7 @@ function check_email_address($emailcheck) {
 	return true;
 }
 function add_comment($name,$emailStr,$homepage,$commenttext,$id){
- $con = mysql_connect("localhost","root","root");
-if (!$con)
-  {
-  die('Could not connect: ' . mysql_error());
-  }
-mysql_query("SET NAMES 'utf8'");
-mysql_select_db("mysql", $con);
-
-
+ $con = get_con();
 $sql="INSERT INTO COMMENT (name,email, site,comment,add_date,comment_item_id) 
 VALUES ('$name','$emailStr','$homepage', '$commenttext',now(),'$id')";
 if (!mysql_query($sql,$con))

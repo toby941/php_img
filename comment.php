@@ -13,31 +13,23 @@ function get_gravatar($email, $s = 80, $d = 'mm', $r = 'g', $img = false, $atts 
 	return $url;
 }
 ?>
-
-
 <div id="comments">
 <h3 class="comments">
 	关于穿什么的需求收集，第34楼送衣服一件</h3>
+	<p>请大家随便说说关于自己的日常服装消费，包括喜爱类型，款式，品牌，颜色，用料，购买地方，适宜价格啦。算是做一个小调查，看看大家都需要些什么样的衣服。34楼送服装一件，若是MM送VM T恤一件，GG送JJ的短裤一条。</p>
 <ol class="commentlist">
 <?php
+$con = get_con("localhost", "root", "root");
+$result = mysql_query("SELECT * FROM COMMENT where comment_item_id=1 order by add_date");
 
-
-$con = mysql_connect("localhost", "root", "root");
-if (!$con) {
-	die('Could not connect: ' . mysql_error());
-} else {
-	mysql_query("SET NAMES 'utf8'");
-	mysql_select_db("mysql", $con);
-	$result = mysql_query("SELECT * FROM COMMENT where comment_item_id=1 order by add_date");
-
-	while ($row = mysql_fetch_array($result)) {
-		$homepage = htmlspecialchars($row['site']);
-		if($homepage){
+while ($row = mysql_fetch_array($result)) {
+	$homepage = htmlspecialchars($row['site']);
+	if ($homepage) {
 		$homepage = strpos($homepage, "http://") ? $homepage : "http://" . $homepage;
-		}
-		$name=htmlspecialchars($row['name']);
-		$comment=htmlspecialchars($row['comment']);
-		$userEmail=$row['email'];
+	}
+	$name = htmlspecialchars($row['name']);
+	$comment = htmlspecialchars($row['comment']);
+	$userEmail = $row['email'];
 ?>
 	<li class="comment" >
 				<div class="comment-body" >
@@ -49,16 +41,15 @@ if (!$con) {
 				</div>
 			<cite class="fn">
 			<?php
-
-		if ($homepage) {
+	if ($homepage) {
 ?>
 			<a class="url" rel="external nofollow" href="<?php echo $homepage; ?>">
 			<?php echo $name; ?>
 			</a>
 			<?php
-		} else {
-			echo $name;
-		}
+	} else {
+		echo $name;
+	}
 ?>
 			</cite> <span class="says">说：</span></div>
 			</div>
@@ -67,7 +58,6 @@ if (!$con) {
 	</li>
 <?php
 
-	}
 }
 mysql_close($con);
 ?>
@@ -104,6 +94,6 @@ mysql_close($con);
 							</div>
 </div>
 <?php
-
 require ("footer.php");
 ?>
+<input type="hidden" id="currentPageId" value="nav_man"/>
