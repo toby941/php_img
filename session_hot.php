@@ -29,7 +29,7 @@ require("include.php");
 				</a>
 				<div class="caption">
 					<div class="download">
-					<a name="download" href="" target="_blank">Download Original</a>
+					<a name="download" href="" target="_blank">下载原图</a>
 					</div>
 					<div class="image-title"></div>
 					<div class="image-desc"></div>

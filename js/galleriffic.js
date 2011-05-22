@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
         var isOff = link.hasClass('off');
         var removeClass = isOff ? 'off' : 'on';
         var addClass = isOff ? 'on' : 'off';
-        var linkText = isOff ? 'Hide Caption' : 'Show Caption';
+        var linkText = isOff ? '隐藏详情' : '详情介绍';
         captionOpacity = isOff ? 0.7 : 0.0;
         
         link.removeClass(removeClass).addClass(addClass).text(linkText).attr('title', linkText);

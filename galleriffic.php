@@ -61,7 +61,7 @@ function emptyDir($directory) {
 				'<a class="thumb" name="leaf" href="./' . $directory . '/' . $file . '" title="Title #0">' .
 				'<img src="./' . $directory . '/s/' . $file . '" alt="Title #0" />' .
 				'</a><div class="caption"><div class="download">' .
-				'<a href="./' . $directory . '/' . $file . '" >Download Original</a></div>' .
+				'<a href="./' . $directory . '/' . $file . '" >下载原图</a></div>' .
 				'<div class="image-title">Title #0</div>' .
 				'<div class="image-desc">Description</div>' .
 				'</div></li>';
