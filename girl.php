@@ -1,7 +1,7 @@
 <?php
 require("include.php");
 ?>
-				<h2>2011 JackJones杰克琼斯 给力男装 优惠特卖</h2>
+				<h2>2011 品牌女装 优惠特卖</h2>
 				<!-- Start Advanced Gallery Html Containers -->
 				<div id="gallery" class="content">
 					<div id="controls" class="controls"></div>
